@@ -34,7 +34,8 @@ function getKey(): string {
   return cachedKey;
 }
 
-const BASE = "https://api.firecrawl.dev/v1";
+// Firecrawl v1 stops working on 2026-12-10 15:00 UTC (HTTP 410); v2 keeps the scrape response shape.
+const BASE = "https://api.firecrawl.dev/v2";
 
 export type ScrapeOpts = {
   formats?: ("markdown" | "html" | "json" | "links")[];
@@ -67,13 +68,16 @@ export async function fcScrape(url: string, opts: ScrapeOpts = {}): Promise<FcRe
   } catch (e) {
     return { success: false, error: (e as Error).message };
   }
+  // v2 moves JSON extraction options into the formats entry: { type: "json", prompt, schema }.
+  const formats = (opts.formats ?? ["markdown"]).map((f) =>
+    f === "json" && opts.jsonOptions ? { type: "json" as const, ...opts.jsonOptions } : f,
+  );
   const body = {
     url,
-    formats: opts.formats ?? ["markdown"],
+    formats,
     onlyMainContent: opts.onlyMainContent ?? true,
     waitFor: opts.waitFor ?? 4000,
     proxy: opts.proxy ?? "stealth",
-    ...(opts.jsonOptions && { jsonOptions: opts.jsonOptions }),
     ...(opts.maxAge !== undefined && { maxAge: opts.maxAge }),
   };
   // Stealth-proxy scrapes with waitFor can legitimately take a while.
