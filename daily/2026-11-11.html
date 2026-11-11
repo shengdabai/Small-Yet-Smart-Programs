@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>机会简报 2026-11-11 · Opportunity Briefing</title>
+<style>
+:root{--bg:#0f1115;--card:#171a21;--line:#262b36;--ink:#e8eaed;--mut:#9aa3b2;--gold:#d4a72c;--p3:#b06cd4;--acc:#4a9eff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Segoe UI",system-ui,sans-serif;line-height:1.6}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 20px 80px}
+header{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:28px;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px}
+h1{font-size:1.7rem;letter-spacing:-.01em}
+.date{color:var(--mut);font-family:ui-monospace,monospace;font-size:.85rem}
+.toggle{display:flex;gap:6px}
+.toggle button{background:var(--card);color:var(--mut);border:1px solid var(--line);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:.85rem}
+.toggle button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+.summary{display:flex;gap:18px;margin-bottom:28px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 20px;min-width:120px}
+.stat .n{font-size:2rem;font-weight:700}
+.stat.t3 .n{color:var(--p3)} .stat.t2 .n{color:var(--gold)}
+.stat .l{color:var(--mut);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}
+h2{font-size:1.15rem;margin:32px 0 14px;padding-left:10px;border-left:3px solid var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card-head{display:flex;justify-content:space-between;align-items:start;gap:8px;margin-bottom:4px}
+.name{color:var(--ink);font-weight:600;text-decoration:none;font-size:1.02rem}
+.name:hover{color:var(--acc)}
+.badge{font-size:.72rem;font-family:ui-monospace,monospace;padding:2px 8px;border-radius:20px;white-space:nowrap;background:#222}
+.badge.t3{background:rgba(176,108,212,.2);color:var(--p3)} .badge.t2{background:rgba(212,167,44,.2);color:var(--gold)} .badge.sig{color:var(--mut)}
+.src{color:var(--mut);font-size:.72rem;font-family:ui-monospace,monospace;margin-bottom:8px}
+.desc{color:#c4cad6;font-size:.9rem;margin-bottom:10px}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.src-link{display:inline-block;font-size:.82rem;color:var(--acc);text-decoration:none;border:1px solid var(--acc);border-radius:6px;padding:5px 12px;transition:.15s}
+.src-link:hover{background:var(--acc);color:#fff}
+.pill{font-size:.7rem;color:var(--mut);border:1px solid var(--line);padding:2px 8px;border-radius:20px}
+.muted{color:var(--mut);font-style:italic;padding:8px 0}
+.disclaimer{margin-top:40px;padding:16px 20px;background:rgba(212,167,44,.08);border:1px solid rgba(212,167,44,.3);border-radius:10px;color:var(--mut);font-size:.86rem}
+footer{margin-top:40px;color:var(--mut);font-size:.78rem;text-align:center;font-family:ui-monospace,monospace}
+.en{display:none}
+body.lang-en .zh{display:none} body.lang-en .en{display:inline}
+</style>
+</head>
+<body class="lang-zh">
+<div class="wrap">
+<header>
+  <div>
+    <h1><span class="zh">机会简报</span><span class="en">Opportunity Briefing</span></h1>
+    <div class="date">2026-11-11 · smart-programs</div>
+  </div>
+  <div class="toggle">
+    <button id="b-zh" class="on" onclick="setLang('zh')">中文</button>
+    <button id="b-en" onclick="setLang('en')">EN</button>
+  </div>
+</header>
+
+<div class="summary">
+  <div class="stat t3"><div class="n">0</div><div class="l">⭐⭐⭐</div></div>
+  <div class="stat t2"><div class="n">0</div><div class="l">⭐⭐</div></div>
+  <div class="stat"><div class="n">15</div><div class="l"><span class="zh">今日新信号</span><span class="en">fresh today</span></div></div>
+</div>
+
+<h2><span class="zh">值得长期推进</span><span class="en">Worth pursuing — top picks</span></h2>
+<p class="muted"><span class="zh">本期暂无 ⭐⭐⭐(诚实结果,继续手头项目)</span><span class="en">No ⭐⭐⭐ this round (an honest result — keep building).</span></p>
+
+<h2><span class="zh">备选(3 个月后回访)</span><span class="en">Shortlist (revisit in 3 months)</span></h2>
+<p class="muted"><span class="zh">暂无 ⭐⭐ 备选</span><span class="en">No ⭐⭐ shortlist yet.</span></p>
+
+<h2><span class="zh">最新产品信号</span><span class="en">Fresh signals today</span></h2>
+<div class="grid"><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://github.com/GoogleChrome/modern-web-guidance" target="_blank" rel="noopener"><span class="zh">Get your coding agent off ~2019 JavaScript, onto modern web primitives</span><span class="en">Get your coding agent off ~2019 JavaScript, onto modern web primitives</span></a><span class="badge sig"><span class="zh">热度 296</span><span class="en">signal 296</span></span>
+    </div>
+    <div class="src">hackernews</div>
+    <p class="desc"><span class="zh">Browsers natively handle a lot of what used to take 50 lines of JS (or a dependency): `CSS.highlights` for text range highlighting without &amp;lt;span&amp;gt;s everywhere, `&amp;lt;dialog&amp;gt;` and showModal() gi…</span><span class="en">Browsers natively handle a lot of what used to take 50 lines of JS (or a dependency): `CSS.highlights` for text range highlighting without &amp;lt;span&amp;gt;s everywhere, `&amp;lt;dialog&amp;gt;` and showModal() gi…</span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://github.com/GoogleChrome/modern-web-guidance" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://tinyvalencia.com/" target="_blank" rel="noopener"><span class="zh">Valencia, Spain in Sim City/Isometric View</span><span class="en">Valencia, Spain in Sim City/Isometric View</span></a><span class="badge sig"><span class="zh">热度 209</span><span class="en">signal 209</span></span>
+    </div>
+    <div class="src">hackernews</div>
+    <p class="desc"><span class="zh"></span><span class="en"></span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://tinyvalencia.com/" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://github.com/HolyArrs/HolyArrs" target="_blank" rel="noopener"><span class="zh">A 15 MB self-hosted Netflix and Spotify for your media server</span><span class="en">A 15 MB self-hosted Netflix and Spotify for your media server</span></a><span class="badge sig"><span class="zh">热度 165</span><span class="en">signal 165</span></span>
+    </div>
+    <div class="src">hackernews</div>
+    <p class="desc"><span class="zh"></span><span class="en"></span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://github.com/HolyArrs/HolyArrs" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://i.redd.it/tl5ufll1ws0i1.jpeg" target="_blank" rel="noopener"><span class="zh">I just got my first sale ($19), best day of my life!!!</span><span class="en">I just got my first sale ($19), best day of my life!!!</span></a><span class="badge sig"><span class="zh">热度 128</span><span class="en">signal 128</span></span>
+    </div>
+    <div class="src">reddit/SaaS</div>
+    <p class="desc"><span class="zh">I was about to give up on this app I spent so much time building, but literally 2 minutes after deciding to switch to another project, I got the sale notification on my phone! I haven’t experienced th…</span><span class="en">I was about to give up on this app I spent so much time building, but literally 2 minutes after deciding to switch to another project, I got the sale notification on my phone! I haven’t experienced th…</span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://i.redd.it/tl5ufll1ws0i1.jpeg" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://v.redd.it/r2y41dzixm0i1" target="_blank" rel="noopener"><span class="zh">I built a tool that turns 3D garments into products shoppers can customize</span><span class="en">I built a tool that turns 3D garments into products shoppers can customize</span></a><span class="badge sig"><span class="zh">热度 106</span><span class="en">signal 106</span></span>
+    </div>
+    <div class="src">reddit/SideProject</div>
+    <p class="desc"><span class="zh"></span><span class="en"></span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://v.redd.it/r2y41dzixm0i1" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://www.ghanastreetgames.com/" target="_blank" rel="noopener"><span class="zh">Ghanaian street games you can play in the browser</span><span class="en">Ghanaian street games you can play in the browser</span></a><span class="badge sig"><span class="zh">热度 105</span><span class="en">signal 105</span></span>
+    </div>
+    <div class="src">hackernews</div>
+    <p class="desc"><span class="zh"></span><span class="en"></span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://www.ghanastreetgames.com/" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://www.reddit.com/r/SaaS/comments/1xs8r3u/i_spent_6000_and_7_months_building_an_app_i_have/" target="_blank" rel="noopener"><span class="zh">I spent $6,000 and 7 months building an app. I have 4 paying customers. And some</span><span class="en">I spent $6,000 and 7 months building an app. I have 4 paying customers. And some</span></a><span class="badge sig"><span class="zh">热度 85</span><span class="en">signal 85</span></span>
+    </div>
+    <div class="src">reddit/SaaS</div>
+    <p class="desc"><span class="zh">7 months. $6,000. Hundreds of bugs. Countless redesigns. And 4 paying customers who have no idea how much they mean to me. Here's the crazy part. All 4 subscribed when my app looked like absolute vibe…</span><span class="en">7 months. $6,000. Hundreds of bugs. Countless redesigns. And 4 paying customers who have no idea how much they mean to me. Here's the crazy part. All 4 subscribed when my app looked like absolute vibe…</span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://www.reddit.com/r/SaaS/comments/1xs8r3u/i_spent_6000_and_7_months_building_an_app_i_have/" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://v.redd.it/x4p8q7nets0i1" target="_blank" rel="noopener"><span class="zh">I just got my first sale, still can’t believe it!!!</span><span class="en">I just got my first sale, still can’t believe it!!!</span></a><span class="badge sig"><span class="zh">热度 60</span><span class="en">signal 60</span></span>
+    </div>
+    <div class="src">reddit/SideProject</div>
+    <p class="desc"><span class="zh">I was about to give up on this mobile app I spent so much time building, but literally 2 minutes after deciding to switch to another project, I got the sale notification on my phone! I haven’t experie…</span><span class="en">I was about to give up on this mobile app I spent so much time building, but literally 2 minutes after deciding to switch to another project, I got the sale notification on my phone! I haven’t experie…</span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://v.redd.it/x4p8q7nets0i1" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://www.reddit.com/r/sidehustle/comments/1xp9g8j/side_hustles_for_someone_stuck_in_bed/" target="_blank" rel="noopener"><span class="zh">side hustles for someone stuck in bed?</span><span class="en">side hustles for someone stuck in bed?</span></a><span class="badge sig"><span class="zh">热度 51</span><span class="en">signal 51</span></span>
+    </div>
+    <div class="src">reddit/sidehustle</div>
+    <p class="desc"><span class="zh">hello everyone!! so i just graduated school in june, and suffered a knee injury in about august, and probably wont be back on my feet for another couple months. my life has been so bleak and boring th…</span><span class="en">hello everyone!! so i just graduated school in june, and suffered a knee injury in about august, and probably wont be back on my feet for another couple months. my life has been so bleak and boring th…</span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://www.reddit.com/r/sidehustle/comments/1xp9g8j/side_hustles_for_someone_stuck_in_bed/" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://i.redd.it/maygx2m7bt0i1.png" target="_blank" rel="noopener"><span class="zh">My new SaaS reached $1200 MRR!!</span><span class="en">My new SaaS reached $1200 MRR!!</span></a><span class="badge sig"><span class="zh">热度 48</span><span class="en">signal 48</span></span>
+    </div>
+    <div class="src">reddit/SaaS</div>
+    <p class="desc"><span class="zh">I've spent the last 5 months working on a new product, (was not moving above 200-300 MRR) and it started grow super fast lately! I attribute the slow growth to multiple things: \- my product was not g…</span><span class="en">I've spent the last 5 months working on a new product, (was not moving above 200-300 MRR) and it started grow super fast lately! I attribute the slow growth to multiple things: \- my product was not g…</span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://i.redd.it/maygx2m7bt0i1.png" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://www.reddit.com/r/EntrepreneurRideAlong/comments/1xrv2tf/7_months_zero_new_deals_10_people_on_payroll_and/" target="_blank" rel="noopener"><span class="zh">7 months, zero new deals, 10 people on payroll and 30 days of cash. Asking for a</span><span class="en">7 months, zero new deals, 10 people on payroll and 30 days of cash. Asking for a</span></a><span class="badge sig"><span class="zh">热度 41</span><span class="en">signal 41</span></span>
+    </div>
+    <div class="src">reddit/EntrepreneurRideAlong</div>
+    <p class="desc"><span class="zh">I run a small studio, 10 people. For about five years we've built XR, web 3D and immersive work for clients: VR training, AR activations, interactive 3D for brands, that kind of thing. It paid the bil…</span><span class="en">I run a small studio, 10 people. For about five years we've built XR, web 3D and immersive work for clients: VR training, AR activations, interactive 3D for brands, that kind of thing. It paid the bil…</span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://www.reddit.com/r/EntrepreneurRideAlong/comments/1xrv2tf/7_months_zero_new_deals_10_people_on_payroll_and/" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://www.reddit.com/r/SaaS/comments/1xsemam/i_left_a_long_corporate_career_to_build_my_own/" target="_blank" rel="noopener"><span class="zh">I left a long corporate career to build my own SaaS. I'm working twice as hard, </span><span class="en">I left a long corporate career to build my own SaaS. I'm working twice as hard, </span></a><span class="badge sig"><span class="zh">热度 37</span><span class="en">signal 37</span></span>
+    </div>
+    <div class="src">reddit/SaaS</div>
+    <p class="desc"><span class="zh">Two months ago, I walked away from an 18-year career with the same company, mostly in telecommunications and IT sales and operations, to focus on building my own SaaS business. The biggest adjustment?…</span><span class="en">Two months ago, I walked away from an 18-year career with the same company, mostly in telecommunications and IT sales and operations, to focus on building my own SaaS business. The biggest adjustment?…</span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://www.reddit.com/r/SaaS/comments/1xsemam/i_left_a_long_corporate_career_to_build_my_own/" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://i.redd.it/psy14l9dee0i1.jpeg" target="_blank" rel="noopener"><span class="zh">Launched our SaaS on Oct 21. 18 days in</span><span class="en">Launched our SaaS on Oct 21. 18 days in</span></a><span class="badge sig"><span class="zh">热度 30</span><span class="en">signal 30</span></span>
+    </div>
+    <div class="src">reddit/SaaS</div>
+    <p class="desc"><span class="zh">Quick context: we're a team of 6 from Almaty, Kazakhstan, building a tool that turns a photo into a print-ready 3D model for home 3D printers. Self-funded, about $2.7k in so far. Payments went live on…</span><span class="en">Quick context: we're a team of 6 from Almaty, Kazakhstan, building a tool that turns a photo into a print-ready 3D model for home 3D printers. Self-funded, about $2.7k in so far. Payments went live on…</span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://i.redd.it/psy14l9dee0i1.jpeg" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://www.reddit.com/r/microsaas/comments/1xrnek3/i_got_my_saas_recommended_1_by_chatgpt_heres/" target="_blank" rel="noopener"><span class="zh">I got my SaaS recommended #1 by ChatGPT. Here’s exactly what I did</span><span class="en">I got my SaaS recommended #1 by ChatGPT. Here’s exactly what I did</span></a><span class="badge sig"><span class="zh">热度 20</span><span class="en">signal 20</span></span>
+    </div>
+    <div class="src">reddit/microsaas</div>
+    <p class="desc"><span class="zh">In June I built a tool that redesigns your room using real products you can buy (quick [proof](https://imgur.com/a/proof-NQO9ICu) of being recommended) Basically scrapes Amazon for real furniture, tak…</span><span class="en">In June I built a tool that redesigns your room using real products you can buy (quick [proof](https://imgur.com/a/proof-NQO9ICu) of being recommended) Basically scrapes Amazon for real furniture, tak…</span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://www.reddit.com/r/microsaas/comments/1xrnek3/i_got_my_saas_recommended_1_by_chatgpt_heres/" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article><article class="card">
+    <div class="card-head">
+      <a class="name" href="https://www.reddit.com/r/indiehackers/comments/1xs0d2n/organic_paid/" target="_blank" rel="noopener"><span class="zh">Organic</span><span class="en">Organic</span></a><span class="badge sig"><span class="zh">热度 20</span><span class="en">signal 20</span></span>
+    </div>
+    <div class="src">reddit/indiehackers</div>
+    <p class="desc"><span class="zh">I’m looking to start turning over into paid ads/traffic for my app [Gamified Lives](https://apps.apple.com/us/app/gamified-lives/id6761446121). I’ve been pure organic for the 5 months I’ve been live, …</span><span class="en">I’m looking to start turning over into paid ads/traffic for my app [Gamified Lives](https://apps.apple.com/us/app/gamified-lives/id6761446121). I’ve been pure organic for the 5 months I’ve been live, …</span></p>
+    <div class="pills"></div>
+    <a class="src-link" href="https://www.reddit.com/r/indiehackers/comments/1xs0d2n/organic_paid/" target="_blank" rel="noopener">🔗 <span class="zh">查看原项目</span><span class="en">View source</span> ↗</a>
+  </article></div>
+
+<div class="disclaimer">
+  <span class="zh">机器初筛 + LLM 初评。⭐⭐⭐ 仅代表"值得人工 review",不是"立刻 pivot"。pivot 前必须和手头项目比较,差 +5 分才动(见 METHODOLOGY.md 反陷阱 5)。</span>
+  <span class="en">Machine pre-filter + LLM first-pass scoring. ⭐⭐⭐ means "worth a human review", not "pivot now". Only switch if it beats your current project by +5 points (see METHODOLOGY.md, anti-trap 5).</span>
+</div>
+
+<footer>smart-programs · 7-dimension rubric (v5 SOP) · 2026-11-11</footer>
+</div>
+<script>
+function setLang(l){
+  document.body.className = 'lang-' + l;
+  document.getElementById('b-zh').classList.toggle('on', l==='zh');
+  document.getElementById('b-en').classList.toggle('on', l==='en');
+  try{ localStorage.setItem('sp-lang', l); }catch(e){}
+}
+try{ const s = localStorage.getItem('sp-lang'); if(s) setLang(s); }catch(e){}
+</script>
+</body>
+</html>
